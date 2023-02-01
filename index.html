@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Time Zone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>TimeZone API</h1>
+        <h1>Your Current Time Zone</h1>
+        <div class="box">
+            <p class="blackdiv time">Name Of Time Zone :<span id="time"></span></p>
+            <p class="blackdiv lat">Lat :<span id="lat"></span></p>
+            <p class="blackdiv lon">Long :<span id="lon"></span></p>
+            <p class="blackdiv std">Offset STD :<span id="std"></span></p>
+            <p class="blackdiv stdSecond">Offset STD Seconds :<span id="stdSecond"></span></p>
+            <p class="blackdiv dst">Offset DST :<span id="dst"></span></p>
+            <p class="blackdiv dstsecond">Offset DST Seconds :<span id="dstsecond"></span></p>
+            <p class="blackdiv country">Country :<span id="country"></span></p>
+            <p class="blackdiv postcode">Postcode :<span id="postcode"></span></p>
+            <p class="blackdiv city">City :<span id="city"></span></p>
+        </div>
+    </div>
+    <div class="address">
+        <h2>Enter Address</h2>
+        <input id="address" type="text" placeholder="Address"><br>
+        <button class="btn" onclick="addressData()">Submit</button>
+        <p style="color: white;" id="success"></p>
+    </div>
+
+    <div id="box2">
+        <p class="whitediv time2">Name Of Time Zone :<span id="timezone"></span></p>
+        <p class="whitediv lat2">Lat :<span id="lat"></span></p>
+        <p class="whitediv lon2">Long :<span id="lon"></span></p>
+        <p class="whitediv std2">Offset STD :<span id="std1"></span></p>
+        <p class="whitediv stdSecond2">Offset STD Seconds :<span id="stdSecond1"></span></p>
+        <p class="whitediv dst2">Offset DST :<span id="dst1"></span></p>
+        <p class="whitediv dstsecond2">Offset DST Seconds :<span id="dstsecond1"></span></p>
+        <p class="whitediv country2">Country :<span id="country1"></span></p>
+        <p class="whitediv postcode2">Postcode :<span id="postcode1"></span></p>
+        <p class="whitediv city2">City :<span id="city1"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
